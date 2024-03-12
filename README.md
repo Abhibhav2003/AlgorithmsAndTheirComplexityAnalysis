@@ -71,6 +71,8 @@ and then recursively sorting the subarrays. The iterative version uses a stack t
 # Practical -11: Correct Position
 This algorithm helps in finding out the correct position of an element in the array such that all the elements preceding the given element are smaller than it
 and all the elements suceeding it are greater than it.
+Time Complexity : O(n)
+<img width="412" alt="image" src="https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/479d0765-af5d-4c64-b744-fd76cdebd9bf">
 
 
 # Practical -12: Cycle Detection
