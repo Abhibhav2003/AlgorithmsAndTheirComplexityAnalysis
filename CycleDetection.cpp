@@ -1,69 +1,67 @@
 #include <iostream>
 #include <vector>
+#include <limits>
 using namespace std;
 
-class Graph {
-public:
-    int vertices;
-    vector<int> parent;
+pair<vector<int>, int> multistage_graph(vector<vector<pair<int, int>>>& graph, vector<vector<int>>& stages) {
+    int num_stages = stages.size();
+    int num_vertices = graph.size();
 
-    Graph(int V) : vertices(V), parent(V) {
-        for (int i = 0; i < V; ++i) {
-            parent[i] = i;
-        }
-    }
+    vector<int> min_costs(num_vertices, numeric_limits<int>::max());
 
-    int find(int v) {
-        if (parent[v] == v)
-            return v;
-        return find(parent[v]);
-    }
+    min_costs[stages[num_stages - 1][0]] = 0;
 
-    void unionSets(int x, int y) {
-        int rootX = find(x);
-        int rootY = find(y);
-        parent[rootX] = rootY;
-    }
+    for (int i = num_stages - 2; i >= 0; i--) {
+        for (int j : stages[i]) {
+            for (const auto& edge : graph[j]) {
+                int neighbor = edge.first;
+                int cost = edge.second;
 
-    bool isCyclic() {
-        for (int u = 0; u < vertices; ++u) {
-            for (int v : adjacencyList[u]) {
-                int rootU = find(u);
-                int rootV = find(v);
-
-                if (rootU == rootV)
-                    return true;
-
-                unionSets(rootU, rootV);
+                if (min_costs[neighbor] > min_costs[j] + cost) {
+                    min_costs[neighbor] = min_costs[j] + cost;
+                }
             }
         }
-
-        return false;
     }
 
-    void addEdge(int u, int v) {
-        adjacencyList[u].push_back(v);
-        adjacencyList[v].push_back(u);
+    vector<int> path;
+    int current_vertex = 0;
+    for (int i = 0; i < num_stages - 1; i++) {
+        path.push_back(current_vertex);
+        for (int j : stages[i]) {
+            if (min_costs[current_vertex] == min_costs[j] + graph[j][current_vertex]) {
+                current_vertex = j;
+                break;
+            }
+        }
     }
+    path.push_back(current_vertex);
 
-private:
-    vector<vector<int>> adjacencyList;
-};
+    return {path, min_costs[stages[num_stages - 1][0]]};
+}
 
 int main() {
-    // Create a graph
-    Graph g(5);
-    g.addEdge(0, 1);
-    g.addEdge(1, 2);
-    g.addEdge(2, 0);
-    g.addEdge(1, 3);
-    g.addEdge(3, 4);
-  
-    if (g.isCyclic()) {
-        cout << "Graph contains a cycle.\n";
-    } else {
-        cout << "Graph does not contain a cycle.\n";
+    vector<vector<pair<int, int>>> graph = {
+        {{1, 2}, {2, 3}, {3, 4}, {3, 5}, {3, 6}},
+        {{4, 7}, {4, 8}, {5, 7}, {5, 8}, {6, 7}, {6, 8}},
+        {{7, 9}, {8, 9}}
+    };
+
+    vector<vector<int>> stages = {
+        {8},          // Sink stage
+        {6, 7},       // Stage K-1
+        {3, 4, 5},    // Stage K-2
+        {1, 2}        // Source stage
+    };
+
+    auto result = multistage_graph(graph, stages);
+
+    cout << "Minimum cost path: ";
+    for (int vertex : result.first) {
+        cout << vertex << " ";
     }
+    cout << endl;
+    cout << "Minimum cost: " << result.second << endl;
 
     return 0;
 }
