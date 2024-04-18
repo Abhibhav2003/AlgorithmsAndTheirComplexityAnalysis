@@ -3,6 +3,8 @@ This practical implements the selection sort algorithm. It iterates through the 
 and swaps it with the first element of the unsorted part.
 This process is repeated until the entire array is sorted
 
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/247ea8e7-2a59-4833-a010-36fcf58acf23)
+
 Working of the algorithm:
 1)	Iterates through the complete array.
 
@@ -46,6 +48,8 @@ Graph:
 
 # Practical -03: Towers of Hanoi
 The Tower of Hanoi algorithm is a classical recursive problem.
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/3f9ae7af-ccec-403b-a851-d37a5520ad3c)
 
 The objective is to move the entire stack to another tower, obeying the following rules:
 1)	Only one disk can be moved at a time.
@@ -112,6 +116,8 @@ Graph:
 # Practical -06: Merging of Two Sorted Lists
 This function merges the two sorted lists into a single sorted list, by comparing each element of the two lists and storing the smaller one in the list.
 
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/4ab0fa91-6084-4984-82fd-2a1feccb4d76)
+
 Working of the Algorithm:
 1)	Initialise a list in which the result is going to be stored.
 2)	Start comparing each element of listA with that of listB.
@@ -165,6 +171,8 @@ Graph:
 About the Algorithm:
 This algorithm helps in finding an element in an array by traversing through the complete array and comparing each element with the element to find.
 
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/1c23ffb1-6de6-49f5-ad29-7b6d6d190705)
+
 Working of the Algorithm:
 1) Using looping traverse the whole array linearly.
 2) Compare each element with the element to find.
@@ -180,7 +188,10 @@ Graph:
 # Practical -10: Generate Magic Square
 ALGORITHM :
 
-The Siamese method is a constructive algorithm for creating odd-order magic squares. The main idea is to start from the central cell of the first row and fill the square by moving diagonally up and to the right. If a move takes the position out of the matrix bounds, it wraps around to the opposite side. If the cell is already occupied, move vertically down one position instead.
+The main idea is to start from the central cell of the first row and fill the square by moving diagonally up and to the right. If a move takes the position out of the matrix bounds, it wraps around to the opposite side. If the cell is already occupied, move vertically down one position instead.
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/58b45b1d-7e96-4e88-af4d-e9004739f98e)
+
 
 TIME COMPLEXITY: The time complexity of generating a magic square using the Siamese method is O(n^2), where 'n' is the order of the square.
 
@@ -233,6 +244,8 @@ Graph:
 This practical implements the merge sort algorithm recursively. It divides the array into two halves, 
 sorts each half independently, and then merges the sorted halves.
 
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/4f7da86c-7559-4e2a-9e95-3158692d4a3c)
+
 Working of the Algorithm:
 Divide: Divide the unsorted array into two halves recursively until each sub-array has only one element. Split the array into halves by finding the middle index.
 Conquer: Sort each sub-array recursively by applying Merge Sort to each half of the array.
@@ -248,6 +261,7 @@ Solving this recursive relation, we get time complexity : O(nlogn).
 This function implements the partition operation of the QuickSort algorithm.
 It selects a pivot element (here, the first element), rearranges the array elements such that elements smaller than the pivot come before it,
 and elements greater than the pivot come after it. The function returns the index of the pivot after partitioning.
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/1b4c821f-081c-43ed-8e05-27d53e1c110d)
 
 Working of the Algorithm:
 1)	Choose Pivot: Select a pivot element from the array. This pivot will be used to partition the array.
@@ -319,6 +333,8 @@ Graph:
 The algorithm uses the Union-Find algorithm for detecting cycles in an undirected graph. 
 It employs the concept of connected components and checks whether adding an edge forms a cycle by examining the roots of the vertices involved
 
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/376766fa-a56d-45f5-807e-9622c967c573)
+
 Working of the Algorithm:
 Initialization: Initialize an array of size V (number of vertices) to represent disjoint sets. Each vertex is initially in its own set.
 
@@ -352,7 +368,10 @@ If no cycle is detected after iterating through all edges, then the graph is acy
 
 # Practical -15: Binary Search
 Practical-09 is the implementation of binary search in which we go on checking for the element in the half portion of the array, because of which the time complexity 
-is equal to O(logn).
+is equal to O(long).
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/e0d1db5c-2805-452a-b41d-dab1dc43242b)
+
 
 Working of the Algorithm:
 1)	Define the search range, usually the entire sorted array, and set two pointers, low and high, to the start and end of the range, respectively.
@@ -404,6 +423,8 @@ Final result: Once the iteration is complete, the maximum value achievable consi
 About the algorithm:
 Dijkstra's algorithm is a greedy algorithm used for finding the single-source shortest paths in a weighted graph with non-negative weights. It starts with an empty set of vertices and repeatedly selects the vertex with the minimum distance from the source, adding it to the set. The algorithm then updates the distance values of the neighbouring vertices based on the newly added vertex. This process continues until all vertices are included in the set, and the algorithm finds the shortest paths from the source to all other vertices.
 
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/6aa0d513-933b-4417-ae5e-3746061c2dd8)
+
 Working of the algorithm:
 Initialization:
 
@@ -429,6 +450,8 @@ Time Complexity:  O (V + E l o g V) {E: Number of Edges and V: number of vertice
 
 About the Algorithm:
 Prim's algorithm for finding the minimum spanning tree of a weighted undirected graph is often implemented with a priority queue (heap) to efficiently select the next vertex to add to the tree.
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/754a1c63-0328-4caf-b057-0ffeb02d14b8)
 
 Working of the Algorithm:
 
@@ -467,6 +490,8 @@ Time Complexity:  O ((V + E) l o g V) {E: Number of Edges, V: Number of Vertices
 About the Algorithm:
 This algorithm helps in providing the minimum distance and shortest path from source to destination.
 
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/b04216fc-dc0d-47e9-af1c-1efdf251dee1)
+
 Working of the Algorithm:
 
 Initialize distances:
@@ -491,6 +516,8 @@ Time Complexity: O(V + E).
 About the Algorithm:
 
 Kruskal's algorithm is a popular greedy algorithm used to find the minimum spanning tree (MST) of a connected, undirected graph. A minimum spanning tree of a graph is a subgraph that is a tree (a connected graph with no cycles) and spans all the vertices of the original graph while minimizing the total edge weight.
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/ce334c49-1c98-4a77-9e1b-366107dcd09c)
 
 Working of the Algorithm:
 
@@ -568,6 +595,8 @@ Algorithm:
 
 The Floyd-Warshall algorithm is a dynamic programming approach to solve the all-pairs shortest paths problem. It works by iteratively considering all possible intermediate nodes between any two nodes in the graph. Here's a breakdown of the steps:
 
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/8f8da52d-5b5c-4627-9710-9f91ac1976b9)
+
 Initialization:
 
 Create a copy of the original cost matrix (costMat) to store the shortest distances (cost). Initially, the shortest distance between two nodes is set to the value in the original cost matrix. Iterative Relaxation:
@@ -606,10 +635,10 @@ Pseudo-Code:
 ![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/aa256754-924b-4074-8d32-fe345786a07c)
 
 # PRACTICAL 28: Longest Common Subsequence
-Algorithm:
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/5a729fdb-5b19-4f3e-8434-6b208006e8b6)
 
 Problem:
-
 Given two strings X and Y, find the length of the longest common subsequence (LCS) which is a subsequence that appears in both strings without changing their relative order. lcs Function:
 
 This recursive function calculates the length of the LCS for two strings. It takes the following arguments: X: The first string. Y: The second string. m: The length of the first string. n: The length of the second string. Base Cases:
@@ -649,7 +678,9 @@ Pseudo-Code:
 ![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/0190370a-0b81-47a6-b398-0bed9e1b8662)
 
 # PRACTICAL 30: N-Queen problem
-Algorithm:
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/1d76a8ff-ea76-4667-bd69-26610e87c307)
+
 
 Board Representation:
 
@@ -671,7 +702,8 @@ Pseudo-Code:
 
 # PRACTICAL 31: M-Coloring graph Problem
 
-Algorithm:
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/d1fae617-71c0-4710-902c-776c5dbccd8a)
+
 
 Graph Representation: The graph is represented using a 2D boolean adjacency matrix graph. A value of true at graph[i][j] indicates an edge between vertex i and vertex j.
 
