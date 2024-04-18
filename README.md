@@ -11,7 +11,11 @@ Working of the algorithm:
 3)	Swaps the minimum element with the first element of the unsorted part.
 
 4)	This process is repeated until the entire array is sorted.
-   
+
+Pseudo-Code:
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/20b0a869-173f-4871-9a90-e302814e70c4)
+
 Time Complexity of the Algorithm:
 For every ith element the next (n-i) are iterated, therefore the time complexity of the algorithm is O(n2).
 
@@ -28,6 +32,10 @@ Working of the Algorithm:
 2)	Iterate through the complete array
 3)	The sum is stored in this way: sum = sum + arr[i] 
 4)	The loop runs till the last element is reached 
+
+Pseudo-Code:
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/7c73aa4a-3ebe-4fa0-9a82-1f06feec4462)
 
 Time Complexity:
 As the complete array is being iterated over, n elements are being traversed, therefore the time complexity is O(n).
@@ -50,6 +58,10 @@ Working of the Algorithm:
 3)	Move the nth disk from Source to Destination tower.
 4)	Move n-1 disks from Auxiliary to Destination tower: Use the source tower as the auxiliary tower.
 
+Pseudo-Code:
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/f1c1d0c6-e17c-46be-98a7-257fa585817f)
+
 Time Complexity:
 The number of moves required for n disks can be represented by the recurrence relation T(n) = 2T(n-1) + 1.
 Solving this recurrence relation we get => T(n) = 2n – 1.
@@ -61,6 +73,10 @@ Graph:
 
 # Practical -04: Coin Permutation
 ALGORITHM : This function recursively generates all combinations of heads (1) and tails (0) for a given number of coin tosses. It starts with an array arr initialized to all zeros, and at each recursion level, it sets the current toss to heads (1) and recursively calls itself for the next toss. Then, it sets the current toss to tails (0) and recursively calls itself again. 
+
+Pseudo-Code:
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/02f1f78c-7bfd-45ed-be74-69d59c650fb9)
 
 TIME COMPLEXITY: The time complexity of this code is exponential, specifically O(2^n), where 'n' is the number of coin tosses. This is because, at each toss, there are two possibilities (heads or tails), and the recursive function explores all possible combinations
 
@@ -80,6 +96,10 @@ For each element:
 5)	Swap back the elements to maintain the original order.
 6)	Backtrack: After exploring all permutations with the current element at the first position, backtrack by swapping elements back to their original positions.
 
+Pseudo-Code:
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/ef0d88ef-8f11-4505-85cb-a9a0f0222af0)
+
 Time Complexity:
 
 Since, the total number of permutations of n elements is n!, therefore the time complexity is O(n!).
@@ -97,7 +117,11 @@ Working of the Algorithm:
 2)	Start comparing each element of listA with that of listB.
 3)	Loop stops when any one of the list gets completely iterated over.
 4)	Push the remaining elements(if any) of the list as it is in the resultant list.
-  
+
+Pseudo-Code:
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/bdaeada2-74e2-4c6d-9fc6-833c422fcd24)
+
 Time Complexity:
 Since, n elements are being compared and iterated over, the time complexity is O(n).
 
@@ -116,6 +140,7 @@ Working of the Algorithm:
 5)	If the element is smaller than the given element move forward and similarly for the right side move backwards.
 6)	If the element is larger than the element then swap it
 7)	Loop runs till i<j.
+
 
 Time Complexity : Since, a single loop is being used and all the ‘n’ elements are being traversed, therefore time complexity of this algorithm is: O(n).
 
@@ -534,6 +559,9 @@ Iterate through each station on both assembly lines, calculating the optimal tim
 Keep track of the optimal times to exit each assembly line.
 Finally, select the minimum of the exit times as the optimal total time.
 
+Pseudo-Code:
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/bcb3ced3-6bd7-42be-bab2-00b2923e1073)
 
 # PRACTICAL 26: All Pairs Shortest Path
 Algorithm:
@@ -552,6 +580,10 @@ The time complexity of the Floyd-Warshall algorithm is O(n^3), where n is the nu
 
 The outer loop iterates over all possible intermediate nodes (k) n times. The middle loop iterates over all source nodes (i) n times. The inner loop iterates over all destination nodes (j) n times.
 
+Pseudo-Code:
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/5a878a91-4697-40d7-a5da-03cfcbe1eeb8)
+
 # PRACTICAL 27: 0/1 Knapsack
 Algorithm:
 
@@ -569,6 +601,9 @@ The time complexity of this algorithm depends on the sorting step and the nested
 
 Sorting: Sorting the n items using a comparison-based sorting algorithm like quicksort or merge sort has a time complexity of O(n log n) in the average and worst case. Processing: The outer loop iterates through n items. The inner loop iterates through the include set, which can grow up to n in the worst case (every item can be included initially). However, the "purge" step within the inner loop helps remove solutions that cannot contribute to a better outcome, potentially reducing the average number of iterations. The additional nested loop for checking exclusion within the "purge" contributes a factor of n in the worst case.
 
+Pseudo-Code:
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/aa256754-924b-4074-8d32-fe345786a07c)
 
 # PRACTICAL 28: Longest Common Subsequence
 Algorithm:
@@ -586,6 +621,10 @@ If the last characters of both strings (X[m-1] and Y[n-1]) are equal: Add 1 to t
 The time complexity of this recursive algorithm for LCS can be exponential in the worst case. Here's why:
 
 At each step, the function makes two recursive calls (if the last characters are different). The recursion tree can grow exponentially in the worst case, where the characters don't match, leading to exploration of all possible subsequences. In the worst case, for strings of length n each, the time complexity can be O(2^n).
+
+Pseudo-Code:
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/307ce91c-d174-43bc-a0d4-f734c108d961)
 
 # PRACTICAL 29: Sum Of Subsets problem
 Algorithm:
@@ -606,6 +645,9 @@ In the hamiltonianCycle function, for each vertex in the current path, there can
 
 Sparse Graphs: Graphs with fewer edges (especially those that might not inherently have Hamiltonian cycles) can lead to fewer exploration paths and faster termination. Early Termination: If no valid Hamiltonian cycle is found after exploring a significant portion of the graph, the algorithm can be terminated early to avoid unnecessary computation.
 
+Pseudo-Code:
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/0190370a-0b81-47a6-b398-0bed9e1b8662)
+
 # PRACTICAL 30: N-Queen problem
 Algorithm:
 
@@ -623,7 +665,12 @@ The time complexity of this backtracking algorithm for the N-Queens problem is a
 
 In the helper function, for each row, there are n possible column positions to try for placing a queen. The recursive calls can explore all possible queen placements on the board. In the worst case, for an n x n chessboard, the number of recursive calls can grow exponentially, reaching O(n^n).
 
+Pseudo-Code:
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/38b45144-c401-46a4-a4d5-3e1cbf395077)
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/be3b55f8-d17a-402f-9602-719d96b0aad2)
+
 # PRACTICAL 31: M-Coloring graph Problem
+
 Algorithm:
 
 Graph Representation: The graph is represented using a 2D boolean adjacency matrix graph. A value of true at graph[i][j] indicates an edge between vertex i and vertex j.
@@ -637,4 +684,7 @@ The time complexity of this backtracking algorithm for m-coloring can be exponen
 
 In the graphcoloringUtil function, for each vertex, there are m possible color assignments to try. The recursive calls can potentially explore all possible color combinations for all vertices. In the worst case, for a graph with n vertices and m colors, the number of recursive calls can grow exponentially, reaching O(m^n).
 
+Pseudo-Code:
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/e29631aa-b991-44e2-9d31-4a7de2b98017)
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/8f974335-0fe6-4e43-a855-5a84c5a55702)
 
