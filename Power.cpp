@@ -11,8 +11,3 @@ int power(int m, long long n) {
         return m * power(m, n - 1);
     }
 }
-
-int main()
-{
-
-}
