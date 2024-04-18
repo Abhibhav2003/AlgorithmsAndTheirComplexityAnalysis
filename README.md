@@ -59,7 +59,16 @@ Graph:
 
 <img width="453" alt="image" src="https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/e7b5895f-a6b2-4e8c-9088-fe466c5daeba">
 
-# Practical -04: Permutation Generator
+# Practical -04: Coin Permutation
+ALGORITHM : This function recursively generates all combinations of heads (1) and tails (0) for a given number of coin tosses. It starts with an array arr initialized to all zeros, and at each recursion level, it sets the current toss to heads (1) and recursively calls itself for the next toss. Then, it sets the current toss to tails (0) and recursively calls itself again. 
+
+TIME COMPLEXITY: The time complexity of this code is exponential, specifically O(2^n), where 'n' is the number of coin tosses. This is because, at each toss, there are two possibilities (heads or tails), and the recursive function explores all possible combinations
+
+Graph:
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/44d0c92c-f092-44f9-8c14-86e2e8d494cc)
+
+# Practical -05: Permutation Generator
 This PRACTICAL generates all permutations of the given array using recursive backtracking. 
 
 Working of the Algorithm:
@@ -80,7 +89,7 @@ Graph:
 
 <img width="420" alt="image" src="https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/ca418eeb-e910-4206-9076-0f0e575feba1">
 
-# Practical -05: Merging of Two Sorted Lists
+# Practical -06: Merging of Two Sorted Lists
 This function merges the two sorted lists into a single sorted list, by comparing each element of the two lists and storing the smaller one in the list.
 
 Working of the Algorithm:
@@ -95,7 +104,7 @@ Since, n elements are being compared and iterated over, the time complexity is O
 <img width="408" alt="image" src="https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/caae64a0-2a0b-4be5-93a7-37aa6edc604f">
 
 
-# Practical -6: Correct Position
+# Practical -07: Correct Position
 This algorithm helps in finding out the correct position of an element in the array such that all the elements preceding the given element are smaller than it
 and all the elements suceeding it are greater than it.
 
@@ -112,7 +121,7 @@ Time Complexity : Since, a single loop is being used and all the ‘n’ element
 
 <img width="412" alt="image" src="https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/479d0765-af5d-4c64-b744-fd76cdebd9bf">
 
-# Practical -07: True False
+# Practical -08: True False
 About the Algorithm:
 This algorithm generates all the True False combinations for the given length.
 
@@ -127,7 +136,7 @@ Graph:
 
 ![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/eebb36af-2c98-40f4-b6fc-304b9961e1d0)
 
-# Practical -08: Linear Search
+# Practical -09: Linear Search
 About the Algorithm:
 This algorithm helps in finding an element in an array by traversing through the complete array and comparing each element with the element to find.
 
@@ -143,7 +152,18 @@ Graph:
 
 ![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/82de1c51-613c-4e03-bd66-6a0c1a3b1161)
 
-# Practical -09: Power Function
+# Practical -10: Generate Magic Square
+ALGORITHM :
+
+The Siamese method is a constructive algorithm for creating odd-order magic squares. The main idea is to start from the central cell of the first row and fill the square by moving diagonally up and to the right. If a move takes the position out of the matrix bounds, it wraps around to the opposite side. If the cell is already occupied, move vertically down one position instead.
+
+TIME COMPLEXITY: The time complexity of generating a magic square using the Siamese method is O(n^2), where 'n' is the order of the square.
+
+Graph:
+
+![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/b0bd9672-c5fb-4030-9ad8-3d3d2724c27d)
+
+# Practical -11: Power Function
 1.	Method-1:
  This algorithm implements a simple recursive algorithm to calculate the power of 'm' raised to the 'n'-th exponent. It uses the recursive property of exponentiation.
 
@@ -184,7 +204,7 @@ Graph:
 
 
 
-# Practical -10: Merge Sort
+# Practical -12: Merge Sort
 This practical implements the merge sort algorithm recursively. It divides the array into two halves, 
 sorts each half independently, and then merges the sorted halves.
 
@@ -199,7 +219,7 @@ Solving this recursive relation, we get time complexity : O(nlogn).
 
 <img width="417" alt="image" src="https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/f481521a-fbd6-48a6-b5cd-74f4a341471f">
 
-# Practical -11: Quick Sort
+# Practical -13: Quick Sort
 This function implements the partition operation of the QuickSort algorithm.
 It selects a pivot element (here, the first element), rearranges the array elements such that elements smaller than the pivot come before it,
 and elements greater than the pivot come after it. The function returns the index of the pivot after partitioning.
@@ -219,7 +239,7 @@ Therefore on solving this we get the time complexity: O(nlogn)
 <img width="450" alt="image" src="https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/1b47b02c-1939-436a-97fa-38fa12f5fa62">
 
 
-# Practical -12: Iterative Quick Sort
+# Practical -14: Iterative Quick Sort
 The QuickSort algorithm sorts an array by selecting a pivot element, partitioning the other elements into two subarrays, 
 and then recursively sorting the subarrays. The iterative version uses a stack to manage the partitioning process without using recursion.
 
@@ -244,7 +264,7 @@ Once the stack is empty, all subarrays have been partitioned and sorted. The arr
 
 Time Complexity : O(nlogn)
 
-# Practical -13: Activity Select
+# Practical -15: Activity Select
 About the Algorithm:
 Activity select is a problem in which there are n classes which are to be held in a fixed time period, this algorithm helps in providing maximum number of such classes that can be held in a given time period.
 
@@ -270,7 +290,7 @@ Graph:
 ![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/a11c74de-8685-4eb0-b301-7007cf44f2c0)
 
 
-# Practical -14: Cycle Detection
+# Practical -16: Cycle Detection
 The algorithm uses the Union-Find algorithm for detecting cycles in an undirected graph. 
 It employs the concept of connected components and checks whether adding an edge forms a cycle by examining the roots of the vertices involved
 
@@ -322,7 +342,7 @@ Since, we are always searching either in the right side of the middle element or
 
 <img width="426" alt="image" src="https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/26ad95e2-e88c-4c19-8c09-39e67712d3fb">
 
-# Practical -16: Knapsack(By weight)
+# Practical -17: Knapsack(By weight)
 About the Algorithm:
 The knapsack problem is a classic optimization problem in computer science where the goal is to maximize the total value of items that can be put into a knapsack, given a set of items each with a weight and a value, and a maximum weight capacity for the knapsack.
 
@@ -337,13 +357,13 @@ Go on selecting the items from left to right.
 Select till the weight limit is reached.
 
 
-# Practical -17: Knapsack(By Profit)
+# Practical -18: Knapsack(By Profit)
 Working of the Algorithm:
 1) Initialization: Create an array and initialize it with 0.
 2)Sort the items by decreasing order of their profit: Go on selecting the maximum profit and pushing it in the array.
 3) Stop when the weight limit is reached.
 
-# Practical -18: Knapsack(By ratio)
+# Practical -19: Knapsack(By ratio)
 
 Working of the Algorithm:
 Compute the profit-to-weight ratio for each item: Calculate the profit-to-weight ratio for each item by dividing the value of the item by its weight.
@@ -354,7 +374,7 @@ Value computation and table update: For each combination of item and weight, com
 Final result: Once the iteration is complete, the maximum value achievable considering all items and weight capacities will be stored in the last cell of the array.
 
 
-# Practical -19: Djikstra's
+# Practical -20: Djikstra's
 
 About the algorithm:
 Dijkstra's algorithm is a greedy algorithm used for finding the single-source shortest paths in a weighted graph with non-negative weights. It starts with an empty set of vertices and repeatedly selects the vertex with the minimum distance from the source, adding it to the set. The algorithm then updates the distance values of the neighbouring vertices based on the newly added vertex. This process continues until all vertices are included in the set, and the algorithm finds the shortest paths from the source to all other vertices.
@@ -380,7 +400,7 @@ Repeat steps 2 to 4 until all vertices are visited. In each iteration, select th
 
 Time Complexity:  O (V + E l o g V) {E: Number of Edges and V: number of vertices}
 
-# Practical -20: Prim's Algorithm
+# Practical -21: Prim's Algorithm
 
 About the Algorithm:
 Prim's algorithm for finding the minimum spanning tree of a weighted undirected graph is often implemented with a priority queue (heap) to efficiently select the next vertex to add to the tree.
@@ -417,7 +437,7 @@ Time Complexity:  O ((V + E) l o g V) {E: Number of Edges, V: Number of Vertices
 
 
 
-# Practical -21: Multistage Graph
+# Practical -22: Multistage Graph
 
 About the Algorithm:
 This algorithm helps in providing the minimum distance and shortest path from source to destination.
@@ -441,7 +461,7 @@ After iterating through all stages, dist[destination] will represent the shortes
 Time Complexity: O(V + E).
 
 
-# Practical -22: Kruskal's
+# Practical -23: Kruskal's
 
 About the Algorithm:
 
@@ -470,7 +490,7 @@ After iterating through all edges, the MST will contain the edges of the minimum
 
 Time Complexity: O(E log V).
 
-# Practical -23: Matrix Chain Multiplication
+# Practical -24: Matrix Chain Multiplication
 
 About the Algorithm:
 Matrix Chain Multiplication problem can be stated as "find the optimal parenthesization of a chain of matrices to be multiplied such that the number of scalar multiplications is minimum”.
@@ -500,7 +520,7 @@ Graph:
 
 ![image](https://github.com/Abhibhav2003/AlgorithmsAndTheirComplexityAnalysis/assets/139039304/c75eff19-8f8b-4e86-998b-ecbd5dcc4cd0)
 
-# Practical -24: Assembly Line Problem
+# Practical -25: Assembly Line Problem
 
 About the Algorithm:
 
@@ -514,5 +534,107 @@ Iterate through each station on both assembly lines, calculating the optimal tim
 Keep track of the optimal times to exit each assembly line.
 Finally, select the minimum of the exit times as the optimal total time.
 
+
+# PRACTICAL 26: All Pairs Shortest Path
+Algorithm:
+
+The Floyd-Warshall algorithm is a dynamic programming approach to solve the all-pairs shortest paths problem. It works by iteratively considering all possible intermediate nodes between any two nodes in the graph. Here's a breakdown of the steps:
+
+Initialization:
+
+Create a copy of the original cost matrix (costMat) to store the shortest distances (cost). Initially, the shortest distance between two nodes is set to the value in the original cost matrix. Iterative Relaxation:
+
+For each intermediate node k (from 0 to n-1, where n is the number of nodes): For each pair of nodes i and j (from 0 to n-1): Relax the edge between i and j by considering the path through k. If the distance going through k is shorter than the current distance between i and j, update the shortest distance in the cost matrix. Shortest Path Matrix:
+
+After all iterations, the cost matrix will contain the shortest distances between all pairs of nodes in the graph. Time Complexity:
+
+The time complexity of the Floyd-Warshall algorithm is O(n^3), where n is the number of nodes in the graph. This is because of the three nested loops:
+
+The outer loop iterates over all possible intermediate nodes (k) n times. The middle loop iterates over all source nodes (i) n times. The inner loop iterates over all destination nodes (j) n times.
+
+# PRACTICAL 27: 0/1 Knapsack
+Algorithm:
+
+Sorting: The algorithm begins by sorting the items in non-decreasing order of their weight. This helps prioritize lighter items that can potentially free up space for heavier valuable items later.
+
+Initialization:
+
+Two sets are created: include: Stores pairs of (value, weight) representing potential solutions where the item is included. exclude: Stores pairs of (value, weight) representing potential solutions where the item is excluded. Initially, exclude only contains a solution with zero value and weight (representing not taking any items). Iterative Processing:
+
+The algorithm iterates through each item in the sorted list: For each item: Create a new temporary set new_include. Iterate through the existing include set: For each solution in include, check if adding the current item's weight doesn't exceed the maximum weight. If it doesn't exceed, add a new solution to new_include with the combined value and weight (including the current item). Merge the existing include set with the newly created new_include set. Perform a "purge" on the include set: Iterate through include: Remove any solution that exceeds the maximum weight. For remaining solutions, check if the value of excluding the current item is less than or equal to the value of including it. If so, add the exclusion solution to exclude (as it cannot lead to a better solution including this item). Finding Maximum Value:
+
+After processing all items, the algorithm iterates through both include and exclude sets to find the solution with the maximum value. Time Complexity:
+
+The time complexity of this algorithm depends on the sorting step and the nested loops in the processing stage.
+
+Sorting: Sorting the n items using a comparison-based sorting algorithm like quicksort or merge sort has a time complexity of O(n log n) in the average and worst case. Processing: The outer loop iterates through n items. The inner loop iterates through the include set, which can grow up to n in the worst case (every item can be included initially). However, the "purge" step within the inner loop helps remove solutions that cannot contribute to a better outcome, potentially reducing the average number of iterations. The additional nested loop for checking exclusion within the "purge" contributes a factor of n in the worst case.
+
+
+# PRACTICAL 28: Longest Common Subsequence
+Algorithm:
+
+Problem:
+
+Given two strings X and Y, find the length of the longest common subsequence (LCS) which is a subsequence that appears in both strings without changing their relative order. lcs Function:
+
+This recursive function calculates the length of the LCS for two strings. It takes the following arguments: X: The first string. Y: The second string. m: The length of the first string. n: The length of the second string. Base Cases:
+
+If either m (length of X) or n (length of Y) is 0, the LCS length is 0 (empty string). Recursive Case:
+
+If the last characters of both strings (X[m-1] and Y[n-1]) are equal: Add 1 to the LCS length of the shorter strings (lcs(X, Y, m-1, n-1)) since the last character is common. Otherwise, consider two possibilities: Exclude the last character of X and find the LCS length for the remaining strings (lcs(X, Y, m-1, n)). Exclude the last character of Y and find the LCS length for the remaining strings (lcs(X, Y, m, n-1)). Return the maximum of the two LCS lengths calculated above (considering the exclusion of the last character from either string). Time Complexity:
+
+The time complexity of this recursive algorithm for LCS can be exponential in the worst case. Here's why:
+
+At each step, the function makes two recursive calls (if the last characters are different). The recursion tree can grow exponentially in the worst case, where the characters don't match, leading to exploration of all possible subsequences. In the worst case, for strings of length n each, the time complexity can be O(2^n).
+
+# PRACTICAL 29: Sum Of Subsets problem
+Algorithm:
+
+Graph Representation:
+
+The graph is assumed to be represented using an adjacency matrix (graph). A value of 1 at graph[i][j] indicates an edge between vertex i and vertex j. hamiltonianCycle Function:
+
+This recursive function explores possible Hamiltonian cycles. It takes the following arguments: graph: The adjacency matrix representation of the graph. path: An array to store the vertices visited so far in the current path (potential cycle). psf: An integer representing the "path so far" (number of vertices visited in the current path). visited: A boolean array to keep track of visited vertices. Base Cases:
+
+If the current path (psf) reaches the total number of vertices (n) and there's an edge from the last vertex back to the starting vertex (completing the cycle): Print the current path (path) as a solution. If psf is less than n - 1 (not enough vertices visited yet): Recursive Exploration:
+
+Iterate through all vertices (v) in the graph: Check if the vertex v is not visited (visited[v] == false) and there's an edge from the current vertex (path[psf]) to v (graph[path[psf]][v] == 1). If both conditions are met: Mark v as visited (visited[v] = true). Include v in the current path (path[psf + 1] = v). Make a recursive call to hamiltonianCycle with the updated parameters: Same graph. Updated path with the included vertex. Incremented psf (one more vertex visited). Updated visited array reflecting the visit. After the recursive call, backtrack by marking v as unvisited again (visited[v] = false) to explore other possibilities. Time Complexity:
+
+The time complexity of this backtracking algorithm for the Hamiltonian Cycle problem is also exponential in the worst case. Here's why:
+
+In the hamiltonianCycle function, for each vertex in the current path, there can be n-psf (remaining unvisited vertices) choices for the next vertex to visit. The recursive calls can explore all possible permutations of visiting vertices, potentially leading to O(n!) (factorial of n) different paths. In the worst case, for a fully connected graph (all vertices have edges to each other), the number of recursive calls can grow very large. However, the practical time complexity can be better than the worst case for several reasons:
+
+Sparse Graphs: Graphs with fewer edges (especially those that might not inherently have Hamiltonian cycles) can lead to fewer exploration paths and faster termination. Early Termination: If no valid Hamiltonian cycle is found after exploring a significant portion of the graph, the algorithm can be terminated early to avoid unnecessary computation.
+
+# PRACTICAL 30: N-Queen problem
+Algorithm:
+
+Board Representation:
+
+The chessboard is represented by a 2D vector of integers (board). A value of 1 at board[i][j] indicates that a queen is placed in row i and column j. isSafe Function:
+
+This function checks if placing a queen at a specific position (r, c) on the board violates the N-Queens rules (no queens attacking each other). It checks for queens in the same row, queens in diagonals with positive and negative slopes relative to the current position. helper Function (Recursive):
+
+This function performs the backtracking logic. It takes the following arguments: board: The current state of the chessboard representation. n: The size of the chessboard (number of rows and columns). r: The current row under consideration for placing a queen. If r reaches the nth row (all rows processed), it means a successful placement is found. It creates a new vector of strings (temp) to represent the solution board with 'Q' for queens and '.' for empty squares, adds it to the ans vector, and backtracks. Otherwise, for each column i in the current row r: It calls the isSafe function to check if placing a queen at (r, i) is valid. If safe, it sets the corresponding position in the board to 1 (queen placed). It makes a recursive call to helper for the next row (r + 1) to explore further placements. After the recursive call, it backtracks by setting the position in the board back to 0 (queen removed). solveNQueens Function:
+
+This function initializes an empty board and calls the helper function with r = 0 to start exploring placements from the first row. It returns the ans vector containing all the valid solutions (boards with queen placements satisfying the rules). Time Complexity:
+
+The time complexity of this backtracking algorithm for the N-Queens problem is also exponential in the worst case, similar to the m-coloring problem. Here's why:
+
+In the helper function, for each row, there are n possible column positions to try for placing a queen. The recursive calls can explore all possible queen placements on the board. In the worst case, for an n x n chessboard, the number of recursive calls can grow exponentially, reaching O(n^n).
+
+# PRACTICAL 31: M-Coloring graph Problem
+Algorithm:
+
+Graph Representation: The graph is represented using a 2D boolean adjacency matrix graph. A value of true at graph[i][j] indicates an edge between vertex i and vertex j.
+
+
+The graphcoloringUtil function recursively tries different color assignments for each vertex. It takes the following arguments: graph: The adjacency matrix representation of the graph. m: The current number of colors being tried (starts from 1). color: An array to store the color assigned to each vertex (initialized with 0s). v: The index of the current vertex being colored. n: The total number of vertices in the graph. For the current vertex (v): It iterates through possible colors (c) from 1 to m. It calls the isSafe function to check if assigning color c to the current vertex violates the coloring rule (no adjacent vertices have the same color). If isSafe returns true, it assigns c to the current vertex (color[v]) and recursively calls graphcoloringUtil for the next vertex (v + 1). If the recursive call for the next vertex returns true (a valid coloring is found for all vertices), it returns true, indicating a successful coloring with m colors. If no valid coloring is found using the current color c, it backtracks by setting color[v] back to 0 and tries the next color for the current vertex. Graph Coloring:
+
+The graphColoring function iteratively tries different values for m (number of colors). It starts with m = 1 and keeps incrementing it. It calls the graphcoloringUtil function with the current m and checks if a valid coloring exists using backtracking. If a valid coloring is found, it prints the solution and returns true (terminates the loop). If no valid coloring is found for a particular m, it tries the next higher value of m. If the loop finishes iterating through all possible values of m without finding a solution, it prints a message indicating no solution exists. Time Complexity:
+
+The time complexity of this backtracking algorithm for m-coloring can be exponential in the worst case. Here's why:
+
+In the graphcoloringUtil function, for each vertex, there are m possible color assignments to try. The recursive calls can potentially explore all possible color combinations for all vertices. In the worst case, for a graph with n vertices and m colors, the number of recursive calls can grow exponentially, reaching O(m^n).
 
 
